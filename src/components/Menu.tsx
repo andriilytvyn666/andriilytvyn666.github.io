@@ -27,6 +27,38 @@ export default function Menu() {
 
   return (
     <header>
+      <Backdrop
+        open={cvMsgOpen}
+        onClick={() => setCvMsgOpen(false)}
+        sx={{
+          zIndex: 1000,
+        }}
+      >
+        <Paper
+          sx={{
+            maxWidth: {
+              xs: "80vw",
+              sm: "60vw",
+              md: "40vw",
+            },
+            p: "1em",
+            textAlign: "left",
+          }}
+        >
+          <Typography>
+            {`
+                      This button should show my CV but I haven't found a great
+                      way to generate and show it yet.
+                      `}
+          </Typography>
+          <Typography>
+            {`
+                      I'll add this feature as soon as
+                      possible 🌈.
+                      `}
+          </Typography>
+        </Paper>
+      </Backdrop>
       <Paper
         square
         sx={{
@@ -57,38 +89,6 @@ export default function Menu() {
                   setCvMsgOpen(!cvMsgOpen);
                 }}
               >
-                <Backdrop
-                  open={cvMsgOpen}
-                  onClick={() => setCvMsgOpen(false)}
-                  sx={{
-                    zIndex: 1000,
-                  }}
-                >
-                  <Paper
-                    sx={{
-                      maxWidth: {
-                        xs: "80vw",
-                        sm: "60vw",
-                        md: "40vw",
-                      },
-                      p: "1em",
-                      textAlign: "left",
-                    }}
-                  >
-                    <Typography>
-                      {`
-                      This button should show my CV but I haven't found a great
-                      way to generate and show it yet.
-                      `}
-                    </Typography>
-                    <Typography>
-                      {`
-                      I'll add this feature as soon as
-                      possible 🌈.
-                      `}
-                    </Typography>
-                  </Paper>
-                </Backdrop>
                 <AccountCircleIcon />
               </IconButton>
             </Grid>

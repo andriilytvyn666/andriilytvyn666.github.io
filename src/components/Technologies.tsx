@@ -46,53 +46,51 @@ export default function Technologies() {
   }
 
   return (
-    <>
-      <Grid
-        spacing={1}
-        container
-        sx={{
-          flexDirection: { xs: "column", md: "row" },
-          justifyContent: "center",
-        }}
-      >
-        {Store.technologies.map((value) => (
-          <Grid key={value.id} item>
-            <Paper
-              variant="outlined"
+    <Grid
+      spacing={1}
+      container
+      sx={{
+        flexDirection: { xs: "column", md: "row" },
+        justifyContent: "center",
+      }}
+    >
+      {Store.technologies.map((value) => (
+        <Grid key={value.id} item>
+          <Paper
+            variant="outlined"
+            sx={{
+              ":hover": {
+                border: `1px solid ${
+                  theme.palette.mode === "dark"
+                    ? theme.palette.text.primary
+                    : theme.palette.divider
+                }`,
+                boxShadow: 8,
+              },
+            }}
+          >
+            <Card
               sx={{
-                ":hover": {
-                  border: `1px solid ${
-                    theme.palette.mode === "dark"
-                      ? theme.palette.text.primary
-                      : theme.palette.divider
-                  }`,
-                  boxShadow: 8,
-                },
+                textAlign: { sm: "left", md: "center" },
+                display: "flex",
+                flexDirection: { sm: "row", md: "column" },
               }}
             >
-              <Card
+              <CardMedia
+                component="img"
+                image={getImage(value.img)}
                 sx={{
-                  textAlign: { sm: "left", md: "center" },
-                  display: "flex",
-                  flexDirection: { sm: "row", md: "column" },
+                  width: { xs: "2em", md: "3em" },
+                  height: { xs: "2em", md: "3em" },
+                  m: { xs: "0.7em", md: "2em" },
+                  mb: { xs: "0.6em", md: "1em" },
                 }}
-              >
-                <CardMedia
-                  component="img"
-                  image={getImage(value.img)}
-                  sx={{
-                    width: { xs: "2em", md: "3em" },
-                    height: { xs: "2em", md: "3em" },
-                    m: { xs: "0.7em", md: "2em" },
-                    mb: { xs: "0.6em", md: "1em" },
-                  }}
-                />
-                <CardHeader subheader={value.name} />
-              </Card>
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
-    </>
+              />
+              <CardHeader subheader={value.name} />
+            </Card>
+          </Paper>
+        </Grid>
+      ))}
+    </Grid>
   );
 }
