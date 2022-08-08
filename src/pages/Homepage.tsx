@@ -3,6 +3,7 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 
 import ProjectsList from "../components/ProjectsList";
+import Certificates from "../components/Certificates";
 import AboutMe from "../components/AboutMe";
 import Technologies from "../components/Technologies";
 
@@ -21,6 +22,12 @@ export default function Homepage() {
           Technologies & Tools
         </Typography>
         <Technologies />
+      </Grid>
+      <Grid item>
+        <Typography gutterBottom variant="h5" component="div" align="center">
+          Certificates & Courses
+        </Typography>
+        <Certificates />
       </Grid>
       <Grid item>
         <Typography gutterBottom variant="h5" component="div" align="center">

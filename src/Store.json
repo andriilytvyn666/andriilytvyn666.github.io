@@ -38,6 +38,15 @@
     "email": "lytvyn.andrii.contact@gmail.com",
     "text": "I'm CS/AI student at Lviv Polytechnic National University. I like to learn and work with new exciting technologies. Currently I'm learning .NET, ASP.NET Core, TypeScript and React."
   },
+  "certificates": [
+    {
+      "name": ".NET CAMP",
+      "source": "Sigma Software University",
+      "totalTime": "150 Hours (5 ECTS)",
+      "year": "2022",
+      "file": "2022_sswu_dotnet_camp.pdf"
+    }
+  ],
   "technologies": [
     {
       "id": 1,

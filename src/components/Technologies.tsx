@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  Tooltip,
   Paper,
   Grid,
   Card,
@@ -46,17 +47,23 @@ export default function Technologies() {
   }
 
   return (
-    <>
-      <Grid
-        spacing={1}
-        container
-        sx={{
-          flexDirection: { xs: "column", md: "row" },
-          justifyContent: "center",
-        }}
-      >
-        {Store.technologies.map((value) => (
-          <Grid key={value.id} item>
+    <Grid
+      spacing={1}
+      container
+      sx={{
+        flexDirection: { xs: "column", md: "row" },
+        justifyContent: "center",
+      }}
+    >
+      {Store.technologies.map((value) => (
+        <Grid key={value.id} item>
+          <Tooltip
+            title={value.name}
+            disableFocusListener
+            disableTouchListener
+            arrow
+            disableInteractive
+          >
             <Paper
               variant="outlined"
               sx={{
@@ -90,9 +97,9 @@ export default function Technologies() {
                 <CardHeader subheader={value.name} />
               </Card>
             </Paper>
-          </Grid>
-        ))}
-      </Grid>
-    </>
+          </Tooltip>
+        </Grid>
+      ))}
+    </Grid>
   );
 }
