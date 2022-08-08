@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import {
+  Tooltip,
   Accordion,
   Box,
   Typography,
@@ -112,7 +113,13 @@ export default function ProjectsList() {
                     xs={false}
                     sx={{
                       marginRight: 2,
-                      marginTop: { xs: "1em", sm: "1em", md: 0, lg: 0, lx: 0 },
+                      marginTop: {
+                        xs: "1em",
+                        sm: "1em",
+                        md: 0,
+                        lg: 0,
+                        lx: 0,
+                      },
                     }}
                   >
                     <ProjectTags tags={value.tags} />

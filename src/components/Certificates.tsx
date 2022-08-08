@@ -7,17 +7,13 @@ import {
   IconButton,
   Button,
   Paper,
-  useTheme,
 } from "@mui/material";
 
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 import Store from "../Store.json";
-import Test from "../components/Test";
 
 export default function Certificates() {
-  const theme = useTheme();
-
   return (
     <Grid direction="column" justifyContent="center" spacing={2} container>
       {Store.certificates.map((value) => (
@@ -33,7 +29,7 @@ export default function Certificates() {
                     View
                   </Button>
                 </Grid>
-                <Grid item>
+                <Grid item sx={{ display: { xs: "none", md: "block" } }}>
                   <IconButton href={`certificates/${value.file}`} download>
                     <FileDownloadIcon />
                   </IconButton>

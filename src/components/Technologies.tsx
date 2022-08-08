@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  Tooltip,
   Paper,
   Grid,
   Card,
@@ -56,39 +57,47 @@ export default function Technologies() {
     >
       {Store.technologies.map((value) => (
         <Grid key={value.id} item>
-          <Paper
-            variant="outlined"
-            sx={{
-              ":hover": {
-                border: `1px solid ${
-                  theme.palette.mode === "dark"
-                    ? theme.palette.text.primary
-                    : theme.palette.divider
-                }`,
-                boxShadow: 8,
-              },
-            }}
+          <Tooltip
+            title={value.name}
+            disableFocusListener
+            disableTouchListener
+            arrow
+            disableInteractive
           >
-            <Card
+            <Paper
+              variant="outlined"
               sx={{
-                textAlign: { sm: "left", md: "center" },
-                display: "flex",
-                flexDirection: { sm: "row", md: "column" },
+                ":hover": {
+                  border: `1px solid ${
+                    theme.palette.mode === "dark"
+                      ? theme.palette.text.primary
+                      : theme.palette.divider
+                  }`,
+                  boxShadow: 8,
+                },
               }}
             >
-              <CardMedia
-                component="img"
-                image={getImage(value.img)}
+              <Card
                 sx={{
-                  width: { xs: "2em", md: "3em" },
-                  height: { xs: "2em", md: "3em" },
-                  m: { xs: "0.7em", md: "2em" },
-                  mb: { xs: "0.6em", md: "1em" },
+                  textAlign: { sm: "left", md: "center" },
+                  display: "flex",
+                  flexDirection: { sm: "row", md: "column" },
                 }}
-              />
-              <CardHeader subheader={value.name} />
-            </Card>
-          </Paper>
+              >
+                <CardMedia
+                  component="img"
+                  image={getImage(value.img)}
+                  sx={{
+                    width: { xs: "2em", md: "3em" },
+                    height: { xs: "2em", md: "3em" },
+                    m: { xs: "0.7em", md: "2em" },
+                    mb: { xs: "0.6em", md: "1em" },
+                  }}
+                />
+                <CardHeader subheader={value.name} />
+              </Card>
+            </Paper>
+          </Tooltip>
         </Grid>
       ))}
     </Grid>
