@@ -54,7 +54,7 @@ export default function ProjectsList() {
                 if (readmes[value.repoName] === undefined) {
                   axios
                     .get(
-                      `https://raw.githubusercontent.com/tappitikarrass/${value.repoName}/main/README.md`
+                      `https://raw.githubusercontent.com/andriilytvyn666/${value.repoName}/main/README.md`
                     )
                     .then((response) => {
                       const newValue: { [key: string]: string } = {
