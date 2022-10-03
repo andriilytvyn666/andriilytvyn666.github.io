@@ -1,5 +1,5 @@
 {
-  "name": "tappitikarrass.github.io",
+  "name": "andriilytvyn.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,11 +17,11 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "^7.18.9",
-    "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.2",
+    "@babel/core": "^7.19.3",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.7",
     "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -33,16 +33,16 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
-    "@types/node": "^18.6.3",
-    "@types/react": "^18.0.15",
+    "@types/node": "^18.8.0",
+    "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
-    "@typescript-eslint/parser": "^5.31.0",
-    "@vitejs/plugin-react": "^2.0.0",
-    "eslint": "^8.20.0",
-    "eslint-plugin-react": "^7.30.1",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8",
     "gh-pages": "^4.0.0",
-    "typescript": "^4.7.4",
-    "vite": "^3.0.0"
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4"
   }
 }

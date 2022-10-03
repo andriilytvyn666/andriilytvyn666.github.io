@@ -20,3 +20,6 @@ My personal website built with React, TypeScript and MUI v5.
 - [x] Add projects & tools listing
 - [ ] Add functionality to CV button
 - [ ] Make dynamic buttons based on project info from json
+- [ ] Create UI/UX design in Figma
+- [ ] Integrate blog system
+- [ ] Future migration to gatsby

@@ -6,7 +6,11 @@
       "repoName": "tappitikarrass.github.io",
       "url": "https://github.com/tappitikarrass/tappitikarrass.github.io",
       "type": 0,
-      "tags": ["ts", "react", "mui-v5"]
+      "tags": [
+        "ts",
+        "react",
+        "mui-v5"
+      ]
     },
     {
       "id": 2,
@@ -14,7 +18,11 @@
       "repoName": "telegram-queue-bot",
       "url": "https://github.com/tappitikarrass/telegram-queue-bot",
       "type": 0,
-      "tags": ["c#", "telegram-bot", "redis"]
+      "tags": [
+        "c#",
+        "telegram-bot",
+        "redis"
+      ]
     },
     {
       "id": 3,
@@ -22,7 +30,12 @@
       "repoName": "flask-ani",
       "url": "https://github.com/tappitikarrass/flask-ani",
       "type": 0,
-      "tags": ["python", "flask", "postgres", "react"]
+      "tags": [
+        "python",
+        "flask",
+        "postgres",
+        "react"
+      ]
     },
     {
       "id": 4,
@@ -30,7 +43,12 @@
       "repoName": "deploy-arch",
       "url": "https://github.com/tappitikarrass/deploy-arch",
       "type": 0,
-      "tags": ["bash", "archlinux", "wsl", "docker"]
+      "tags": [
+        "bash",
+        "archlinux",
+        "wsl",
+        "docker"
+      ]
     }
   ],
   "aboutMe": {
