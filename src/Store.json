@@ -2,9 +2,9 @@
   "project": [
     {
       "id": 1,
-      "userName": "tappitikarrass",
-      "repoName": "tappitikarrass.github.io",
-      "url": "https://github.com/tappitikarrass/tappitikarrass.github.io",
+      "userName": "andriilytvyn666",
+      "repoName": "andriilytvyn666.github.io",
+      "url": "https://github.com/andriilytvyn666/andriilytvyn666.github.io",
       "type": 0,
       "tags": [
         "ts",
@@ -14,9 +14,9 @@
     },
     {
       "id": 2,
-      "userName": "tappitikarrass",
+      "userName": "andriilytvyn666",
       "repoName": "telegram-queue-bot",
-      "url": "https://github.com/tappitikarrass/telegram-queue-bot",
+      "url": "https://github.com/andriilytvyn666/telegram-queue-bot",
       "type": 0,
       "tags": [
         "c#",
@@ -26,9 +26,9 @@
     },
     {
       "id": 3,
-      "userName": "tappitikarrass",
+      "userName": "andriilytvyn666",
       "repoName": "flask-ani",
-      "url": "https://github.com/tappitikarrass/flask-ani",
+      "url": "https://github.com/andriilytvyn666/flask-ani",
       "type": 0,
       "tags": [
         "python",
@@ -39,9 +39,9 @@
     },
     {
       "id": 4,
-      "userName": "tappitikarrass",
+      "userName": "andriilytvyn666",
       "repoName": "deploy-arch",
-      "url": "https://github.com/tappitikarrass/deploy-arch",
+      "url": "https://github.com/andriilytvyn666/deploy-arch",
       "type": 0,
       "tags": [
         "bash",

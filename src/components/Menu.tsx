@@ -72,7 +72,7 @@ export default function Menu() {
           <Grid container spacing={2}>
             <Grid item xs={true}>
               <IconButton
-                href="https://github.com/tappitikarrass"
+                href="https://github.com/andriilytvyn666"
                 aria-label="GitHub"
               >
                 <GitHubIcon />
